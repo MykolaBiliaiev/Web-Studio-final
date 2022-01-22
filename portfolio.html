@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+<!--header-block-section-->
+<header class="page-header">
+    <div class="container page-header__container">
+        <a href="./index.html" class="logo link" lang="en">
+            <span class="logo__web--blue-color">Web</span><span class="logo_studio--black-color">Studio</span>
+        </a>
+
+        <button type="button" class="open-menu js-open-menu">
+            <svg width="24" height="16" class="open-menu_btn-icon" aria-label="mobile-menu">
+                <use class="icon-menu" href="images/symbol-defs.svg#mobile-menu_icon"></use>
+            </svg>
+        </button>
+        <nav class="header-navigation">
+
+            <div class="mobile-menu js-menu-container" id="mobile-menu">
+                <button class="js-close-menu">
+                    <svg width="16" height="16" class="icon-cross">
+                        <use class="icon-cross" href="images/symbol-defs.svg#cross-icon"></use>
+                    </svg>
+                </button>
+                <div class="navigation">
+                    <ul class="list">
+                        <li class="mobile-menu__nav-link"><a
+                                href="./index.html">Studio</a></li>
+                        <li class="mobile-menu__nav-link mobile-menu__nav-link--current"><a href="./portfolio.html">Portfolio</a></li>
+                        <li class="mobile-menu__nav-link">Contacts</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul class="list">
+                        <li class="mobile-menu__nav-link mobile-menu__nav-link--blue"><a
+                                href="tel:+380961111111">+380961111111</a></li>
+                        <li class="mobile-menu__nav-link mobile-menu__nav-link--grey "><a
+                                href="mailto:info@devstudio.com">info@example.com</a></li>
+                    </ul>
+                </div>
+
+                <ul class="mobile-soc-media">
+                    <li class="mobile-soc-media__item"><a href="">Instagram</a></li>
+                    <li class="mobile-soc-media__item"><a href="">Twitter</a></li>
+                    <li class="mobile-soc-media__item"><a href="">Facebook</a></li>
+                    <li class="mobile-soc-media__item"><a href="">Linkedin</a></li>
+                </ul>
+
+            </div>
+
+            <ul class="site-nav list">
+                <li class="site-nav__item"><a href="./index.html"
+                        class="site-nav__text">Studio</a></li>
+                <li class="site-nav__item site-nav__text--current"><a href="./portfolio.html" class="site-nav__text">Portfolio</a></li>
+                <li class="site-nav__item"><a href="" class="site-nav__text">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <ul class="header-contacts list">
+            <li class="header-contacts__item"><a href="mailto:info@devstudio.com"
+                    class="header-contacts_link header-contacts__mail">
+                    <svg class="header-contacts__icon" width="16" height="12">
+                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
+                    info@example.com</a>
+            </li>
+            <li class="header-contacts__item"><a href="tel:+380961111111" class="header-contacts_link">
+                    <svg class="header-contacts__icon" width="10" height="16">
+                        <use href="./images/symbol-defs.svg#icon-smartphone"> </use>
+                    </svg>
+                    +380961111111</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+    <!--Hero-block-division-->
+    <main>
+
+        <!--Hero-block-filters-section-->
+    <section class="section">
+    <div class="filters container">
+    <ul class="filters-list list">
+    <li class="filters-list__item"><button type="button" class="filters-list__btn"> All </button></li>
+    <li class="filters-list__item"><button type="button" class="filters-list__btn"> Web-sites</button></li>
+    <li class="filters-list__item"><button type="button" class="filters-list__btn"> Applications </button></li>
+    <li class="filters-list__item"><button type="button" class="filters-list__btn"> Design </button></li>
+    <li class="filters-list__item"><button type="button" class="filters-list__btn"> Marketing </button></li>
+</ul>
+</div>
+
+<!--Hero-block-images-section-->
+<div class="container projects-img-container">
+<ul class="grid list">
+    <li class="grid__item">
+        <div class="thumb">
+            <a href="">
+                <picture>
+                    <source srcset="./images/portfolio/desktop/portfolio-card-1.jpg 1x,
+                            ./images/portfolio/desktop/portfolio-card-1@2x.jpg 2x" media="(min-width:1200px)">
+                
+                    <source srcset="./images/portfolio/tablet/portfolio-card-1-tablet.jpg 1x,
+                                ./images/portfolio/tablet/portfolio-card-1-tablet2x.jpg 2x" media="(min-width:768px)">
+                
+                    <source srcset="./images/portfolio/mobile/portfolio-card-1-mobile.jpg 1x,
+                                ./images/portfolio/mobile/portfolio-card-1-mobile@2x.jpg 2x" media="(min-width:320px)">
+                </picture>
+        <img 
+        srcset="./images/portfolio/mobile/portfolio-card-1-mobile.jpg 1x, 
+        ./images/portfolio/mobile/portfolio-card-1-mobile@2x.jpg 2x"
+        src="./images/portfolio/desktop/portfolio-card-1.jpg" 
+        alt="екран ноутбука" class="thumb-img">
+        <p class="thumb__text-overlay">I'm tired of being what you want me to be
+        Feeling so faithless, lost under the surface
+        Don't know what you're expecting of me
+        Put under the pressure of walking in your shoes</p>
+            </a>
+        </div>
+        <div class="card-text">
+        <h3 class="card-text__title">Technokryak</h3>
+        <p class="card-text__description">Web-site</p>
+        </div>
+        
+    </li>
+
+    <li class="grid__item">
+        <div class="thumb">
+            <picture>
+                <source srcset="./images/portfolio/desktop/portfolio-card-2.jpg 1x,
+                                        ./images/portfolio/desktop/portfolio-card-2@2x.jpg 2x" media="(min-width:1200px)">
+            
+                <source srcset="./images/portfolio/tablet/portfolio-card-2-tablet.jpg 1x,
+                                            ./images/portfolio/tablet/portfolio-card-2-tablet2x.jpg 2x" media="(min-width:768px)">
+            
+                <source srcset="./images/portfolio/mobile/portfolio-card-2-mobile.jpg 1x,
+                                            ./images/portfolio/mobile/portfolio-card-2-mobile@2x.jpg 2x" media="(min-width:320px)">
+            </picture>
+            <a href="">
+                <img 
+                srcset="./images/portfolio/mobile/portfolio-card-2-mobile.jpg 1x, 
+                    ./images/portfolio/mobile/portfolio-card-2-mobile@2x.jpg 2x"
+                    src="./images/portfolio/desktop/portfolio-card-2.jpg" 
+                    alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Every step that I take is another mistake to you
+            (Caught in the undertow, just caught in the undertow)
+            I've become so numb
+            I can't feel you there
+            Become so tired
+            So much more aware
+            </p>
+            </a>
+        </div>
+        <div class="card-text">
+        <h3 class="card-text__title">New Orlean vs Golden Star</h3>
+        <p class="card-text__description">Design</p>
+        </div>
+    </li>
+
+    <li class="grid__item">
+        <div class="thumb">
+        <a href=""><img 
+            srcset="./images/portfolio/mobile/portfolio-card-3-mobile.jpg 1x, 
+        ./images/portfolio/mobile/portfolio-card-3-mobile@2x.jpg 2x"
+        src="./images/portfolio/desktop/portfolio-card-3.jpg" 
+        alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">I'm becoming this
+            All I want to do
+            Is be more like me
+            And be less like you
+            Can't you see that you're smothering me
+            Holding too tightly, afraid to lose control?
+            'Cause everything that you thought I would be
+            Has fallen apart right in front of you
+            </p>
+            </a>
+        </div>
+        <div class="card-text">
+        <h3 class="card-text__title">Seafood Restaurant</h3>
+        <p class="card-text__description">Application</p>
+        </div>
+    </li>
+
+    <li class="grid__item">
+        <div class="thumb">
+            <a href="">
+                <img 
+                srcset="./images/portfolio/mobile/portfolio-card-4-mobile.jpg 1x, 
+        ./images/portfolio/mobile/portfolio-card-4-mobile@2x.jpg 2x"
+        src="./images/portfolio/desktop/portfolio-card-4.jpg" alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Every step that I take is another mistake to you
+            (Caught in the undertow, just caught in the undertow)
+            And every second I waste is more than I can take
+            I've become so numb
+            I can't feel you there
+            Become so tired
+            So much more
+            </p>
+            </a>
+        </div>
+        <div class="card-text">
+        <h3 class="card-text__title">Prime Project</h3>
+        <p class="card-text__description">Marketing</p>
+        </div>
+    </li>
+
+    <li class="grid__item"> 
+        <div class="thumb">
+            <a href="">
+                <img srcset="./images/portfolio/mobile/portfolio-card-5-mobile.jpg 1x, 
+        ./images/portfolio/mobile/portfolio-card-5-mobile@2x.jpg 2x"
+        src="./images/portfolio/desktop/portfolio-card-5.jpg" 
+        alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">I'm becoming this
+            All I want to do
+            Is be more like me
+            And be less like you
+            And I know
+            I may end up failing too
+            But I know
+            You were just like me with someone disappointed in you
+            </p>
+            </a>
+        </div>
+        <div class="card-text">
+        <h3 class="card-text__title">Boxes Project</h3>
+        <p class="card-text__description">Application</p>
+        </div>
+    </li>
+
+    <li class="grid__item">
+        <div class="thumb">
+            <a href="">
+                <img 
+                srcset="./images/portfolio/mobile/portfolio-card-6-mobile.jpg 1x, 
+        ./images/portfolio/mobile/portfolio-card-6-mobile@2x.jpg 2x"
+        src="./images/portfolio/desktop/portfolio-card-6.jpg" 
+        alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">I've become so numb
+            I can't feel you there
+            Become so tired
+            So much more aware
+            I'm becoming this
+            All I want to do
+            Is be more like me
+            And be less like you
+            </p>
+            </a>
+        </div>
+        <div class="card-text">
+        <h3 class="card-text__title">Inspiration has no Borders</h3>
+        <p class="card-text__description">Web-site</p>
+        </div>
+    </li>
+
+    <li class="grid__item">
+        <div class="thumb">
+            <a href="">
+                <img 
+                srcset="./images/portfolio/mobile/portfolio-card-7-mobile.jpg 1x, 
+        ./images/portfolio/mobile/portfolio-card-7-mobile@2x.jpg 2x"
+        src="./images/portfolio/desktop/portfolio-card-7.jpg" 
+        alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">I've become so numb
+            I can't feel you there
+            (I'm tired of being what you want me to be)
+            I've become so numb
+            I can't feel you there
+            (I'm tired of being what you want me to be)
+            </p>
+            </a>
+        </div>
+        <div class="card-text">
+        <h3 class="card-text__title">Limited Edition</h3>
+        <p class="card-text__description">Design</p>
+        </div>
+    </li>
+
+    <li class="grid__item">
+        <div class="thumb">
+            <a href="">
+                <img 
+                srcset="./images/portfolio/mobile/portfolio-card-8-mobile.jpg 1x, 
+        ./images/portfolio/mobile/portfolio-card-8-mobile@2x.jpg 2x"
+        src="./images/portfolio/desktop/portfolio-card-8.jpg" 
+        alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
+                laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
+            </p>
+            </a>
+        </div>
+        <div class="card-text">
+        <h3 class="card-text__title">LAB Project</h3>
+        <p class="card-text__description">Marketing</p>
+        </div>
+    </li>
+
+    <li class="grid__item">
+        <div class="thumb">
+            <a href="">
+                <img 
+                srcset="./images/portfolio/mobile/portfolio-card-9-mobile.jpg 1x, 
+        ./images/portfolio/mobile/portfolio-card-9-mobile@2x.jpg 2x"
+        src="./images/portfolio/desktop/portfolio-card-9.jpg" 
+        alt="лого ресторана" class="thumb-img">
+            <p class="thumb__text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla aut
+                laborum necessitatibus? Voluptatem nisi, error dicta aliquid quo iure.
+            </p>
+            </a>
+        </div>
+        <div class="card-text">
+        <h3 class="card-text__title">Growing Business</h3>
+        <p class="card-text__description">Application</p>
+        </div>
+    </li>
+</ul>
+</div>
+    </section>
+    </main>
+
+<!--Footer-section-->
+<footer class="footer">
+
+    <div class="footer__content container">
+
+        <div class="footer__first-box">
+            <a href="./index.html" class="logo link logo-footer_mobile" lang="en">
+                <span class="logo__web--blue-color">Web</span><span
+                    class="logo_studio logo_studio--inverse">Studio</span>
+            </a>
+
+            <address class="">
+                <ul class="footer-contacts  list">
+                    <li class="footer-contacts__location footer-contacts__item">
+                        <a href="https://www.google.se/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                            target="_blank" rel="noopener noreferre" class="link">
+                            Kyiv, Lesya Ukrainka avenue, 26
+                        </a>
+                    </li>
+
+                    <li class="footer-contacts__item footer-contacts__mail"><a href="mailto:info@example.com"
+                            class="footer-contacts__connection  link">info@example.com</a>
+                    </li>
+                    <li class="footer-contacts__item">
+                        <a href="tel:+380991111111"
+                            class="footer-contacts__connection footer-contacts__item  link ">+380991111111</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+
+        <div class="footer-social-media">
+            <h3 class="join-us-title">Join us</h3>
+            <ul class="socmedia list">
+                <li>
+                    <a href="" class="socmedia__logo-box socmedia__logo-box--inverse">
+                        <svg class="socmedia__icon" width="20" height="20">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="socmedia__logo-box socmedia__logo-box--inverse">
+                        <svg class="socmedia__icon" width="20" height="20">
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="socmedia__logo-box socmedia__logo-box--inverse">
+                        <svg class="socmedia__icon" width="20" height="20">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="socmedia__logo-box socmedia__logo-box--inverse">
+                        <svg class="socmedia__icon" width="20" height="20">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-subscribe-zone">
+            <h3 class="footer-subscribe-zone__title">Subscribe to newsletter</h3>
+            <form class="footer-subscribe-zone__form">
+                <input type="email" class="footer-subscribe-zone__email-input" placeholder="E-mail">
+                <button type="submit" class="subscribe-btn"> <span class="subscribe-btn__text">Subscribe</span>
+                    <svg class="subscribe-btn__icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+    </div>
+</footer>
+
+<script src="./js/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+</body>
+</html>

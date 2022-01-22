@@ -1,0 +1,78 @@
+.site-nav {
+display: flex;
+letter-spacing: 0.02em;
+color: #212121;
+align-items: center;
+font-weight: 500;
+font-style: normal;
+
+@media screen and (max-width:767px) {
+    display: none;
+}
+
+&:last-child {
+margin-right: 50px;
+@media screen and (min-width:1200px) {
+    margin-right: 0;
+}
+}
+}
+
+.header-navigation {
+    @media screen and (min-width:767px) {
+    margin-left: 88px;
+}
+
+@media screen and (min-width:1200px) {
+    margin-left: 93px;
+}
+}
+
+.site-nav__item {
+font-family: Roboto, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 14px;
+line-height: 16,41px;
+letter-spacing: 2%;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:not(:last-child)
+{
+    margin-right: 50px;
+}
+}
+
+.site-nav__text {
+    &:hover, &:focus {
+color: map-get($colors , "primary");;
+
+    }
+}
+
+.site-nav__text--current {
+position: relative;
+color: map-get($colors , "primary");;
+}
+
+.site-nav__text--current {
+    &::after {
+position: absolute;
+left: 0;
+bottom: -31px;
+content: "";
+display: block;
+width: 100%;
+height: 4px;
+background-color:map-get($colors , "primary");;
+
+@media screen and (min-width:768px) {
+    bottom: -40px;
+}
+@media screen and (min-width:1200px) {
+    bottom: -31px;
+}
+}
+}

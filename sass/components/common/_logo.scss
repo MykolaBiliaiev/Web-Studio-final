@@ -1,0 +1,43 @@
+/* logo */
+.logo {
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.03em;
+
+    @media screen and (max-width:480px) {
+        text-align: left;
+    }
+
+    @media screen and (min-width: 768px) {
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    text-align: left;
+    }
+}
+
+.logo-footer_mobile {
+
+@media screen and (max-width:480px) {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+.logo__web--blue-color {
+color: map-get($colors , "primary");
+}
+
+.logo_studio {
+color: #000000;
+
+&--inverse {
+color: map-get($colors , "secondary" );
+}
+}

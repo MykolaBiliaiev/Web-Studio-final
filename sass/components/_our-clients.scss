@@ -1,0 +1,107 @@
+.our-clients_container {
+padding-top: 60px;
+padding-bottom: 60px;
+padding-left: 15px;
+padding-right: 15px;
+// margin-left: auto;
+// margin-right: auto;
+
+@media screen and (min-width:768px) {
+    width: 768px;
+    
+}
+
+    @media screen and (min-width:1200px) {
+    width: 1200px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+    padding-left: 0;
+    padding-right: 0;
+    }
+}
+
+.our-clients__title {
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+@media screen and (min-width:1200px) {
+font-family: Roboto, sans-serif;
+font-weight: bold;
+font-style: normal;
+font-size: 36px;
+}
+}
+
+.our-clients__list {
+display: flex;
+flex-wrap: wrap;
+
+    @media screen and (min-width:1200px) {
+display: flex;
+justify-content: space-between;
+margin-top: 50px;
+    }
+}
+
+.our-clients_item {
+display: block;
+    @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    }
+    
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
+    }
+
+}
+
+.our-clients__link {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 92px;
+border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+color: #AFB1B8;
+
+transition-property: border, color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (min-width:1200px) {
+width: 170px;
+height: 92px;
+
+&:hover, &:focus {
+color: map-get($colors , "primary");;
+border-color: map-get($colors , "primary");;
+}
+}
+}
+
+.our-clients__logo {
+width: 106px;
+height: 60px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+fill: currentColor;
+}

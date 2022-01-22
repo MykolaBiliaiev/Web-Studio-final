@@ -1,0 +1,160 @@
+.mobile-version-container {
+    @media screen and (min-width:767px) {
+        display: none;
+    }
+}
+
+.open-menu {
+    @media screen and (max-width:767px) {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+
+    @media screen and (min-width:768px) {
+    display: none;
+    }
+}
+
+.open-menu_btn-icon {
+    margin: auto;
+}
+
+.open-menu.is-open .icon-menu {
+    display: none;
+}
+
+
+.mobile-menu {
+background-color: #fff;
+position: absolute;
+transform: translateY(-101%);
+z-index: 100;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding-top: 48px;
+padding-bottom: 48px;
+padding-left: 40px;
+visibility: hidden;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (max-width: 480px) {
+    padding-left: 8vw;
+}
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+}
+
+.mobile-menu.is-open {
+visibility: visible;
+position: fixed;
+transform: translateY(0);
+
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+}
+
+.mobile-menu__nav-link {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+text-align: left;
+letter-spacing: 0.02em;
+
+&--blue {
+    color: map-get($colors , "primary" );
+}
+
+&--grey {
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+&--current {
+    color: map-get($colors , "primary" );
+}
+
+&:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+&:nth-child(3) {
+margin-bottom: 306px;
+}
+
+&:active {
+    color: map-get($colors , "primary" );
+}
+}
+
+
+.mobile-soc-media {
+display: flex;
+align-items: start;
+list-style: none;
+margin-top: 64px;
+margin-left: -40px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.02em;
+color: map-get($colors , "primary" );
+}
+
+
+.mobile-soc-media__item {
+display: flex;
+word-spacing: -0.36em;
+
+    &:not(:last-child)::after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+}
+
+
+.js-close-menu {
+
+    @media screen and (max-width:480px) {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    display: block;
+    text-align: right;
+    }
+}
+
+.icon-cross {
+    margin: auto;
+}

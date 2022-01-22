@@ -1,0 +1,142 @@
+.our-team {
+background-color: #f5f4fa;
+padding-top: 60px;
+width: 100%;
+
+    @media screen and (min-width:1200px) {
+    display: flex;
+    justify-content: center;    
+    padding-top: 94px;
+    }
+}
+
+.our-team__list {
+display: flex;
+flex-wrap: wrap;
+
+
+    @media screen and (min-width:1200px) {
+        flex-basis: calc((100% - 2 * 15px) / 2);
+    }
+
+
+    @media screen and (min-width:1200px) {
+    display: flex;
+    margin: -15px;
+    } 
+}
+
+.our-team__title {
+
+    @media screen and (max-width:1169px) {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-bottom: 15px;
+    }
+
+    @media screen and (min-width:1200px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+    }
+}
+
+.our-team__item {
+width: 450px;
+background: map-get($colors , "secondary" );
+border-left: 1px solid #eeeeee;
+border-bottom: 1px solid #eeeeee;
+border-right: 1px solid #eeeeee;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+@media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    margin: 15px;
+    }
+    
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+    }
+
+
+&:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 15px;
+    }
+}
+}
+
+
+.our-team_img {
+width: 100%;
+}
+
+.team-member-description {
+
+    @media screen and (min-width:1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    }
+}
+
+.team-member-description__title {
+margin-top: 30px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+
+    @media screen and (min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+}
+
+.team-member-description__position {
+margin-top: 10px;
+margin-bottom: 16px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+
+    @media screen and (min-width:1179px) {
+color: #757575;
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+font-weight: 400;
+text-align: center;
+    }
+}

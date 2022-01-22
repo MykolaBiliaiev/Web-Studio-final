@@ -1,0 +1,117 @@
+.our-benefits > .our-benefits__list {
+list-style: none;
+padding-left: 15px;
+padding-right: 15px;
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
+}
+
+.our-benefits__item {
+    @media screen and (max-width: 767px) {
+    max-width: 767px;
+
+    &:not(:last-child) {
+    margin-bottom: 30px;
+    }
+    }
+    
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+    }
+
+    &::before {
+display: block;
+content: "";
+height: 120px;
+margin-bottom: 30px;
+background-color: #F5F4FA;
+}
+}
+
+.benefit-antenna::before {
+display: block;
+content: "";
+background-repeat: no-repeat;
+background-image: url(../images/our-benefits/antenna-1.svg);
+background-position: center;
+}
+
+.benefit-clock::before {
+display: block;
+content: "";
+background-repeat: no-repeat;
+background-image: url(../images/our-benefits/clock-2.svg);
+background-position: center;
+}
+
+.benefit-diagram::before {
+display: block;
+content: "";
+background-repeat: no-repeat;
+background-image: url(../images/our-benefits/diagram-3.svg);
+background-position: center;
+}
+
+.benefit-astronaut::before {
+display: block;
+content: "";
+background-repeat: no-repeat;
+background-image: url(../images/our-benefits/astronaut-4.svg);
+background-position: center;
+}
+
+.our-benefits__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    
+    @media screen and (min-width:768px) {
+        text-align: left;
+    }
+
+    @media screen and (min-width:1200px) {
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    margin-left: 0px; 
+    }
+}
+
+.our-benefits__description {
+margin-right: auto;
+margin-left: auto;
+text-align: left;
+color: #757575;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+margin-right: 30px;
+
+    @media screen and (min-width:1200px) {
+    color: #757575;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-right: 30px;
+    margin-right: 0px;
+    }
+
+}
